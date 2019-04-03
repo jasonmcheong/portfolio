@@ -1,13 +1,7 @@
-// Widescreens
-@include mediaXl {
-	.projects {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
 // Desktops & Laptops
 @include mediaLg {
 	.projects {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 // Tablets & Small Laptops
@@ -66,7 +60,12 @@
 	}
 
 	.projects {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr;
+
+		.item {
+			width: 80%;
+			margin: 0 auto;
+		}
 	}
 
 	.boxes div {
@@ -81,5 +80,9 @@
 
 	.projects {
 		grid-template-columns: 1fr;
+
+		.item {
+			width: 100%;
+		}
 	}
 }
